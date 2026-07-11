@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://YOUR-RAILWAY-URL.up.railway.app/sitemap.xml
