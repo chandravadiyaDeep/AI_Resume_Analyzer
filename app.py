@@ -17,6 +17,10 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
+@app.route("/googlea22937c2046439e8.html")
+def google_verification():
+    return send_from_directory(".", "googlea22937c2046439e8.html")
+
 
 @app.route("/")
 def home():
