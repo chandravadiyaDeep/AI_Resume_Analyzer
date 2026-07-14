@@ -1,44 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>AI Resume Analyzer - Free ATS Resume Checker</title>
-
-<meta name="description" content="Free AI Resume Analyzer that checks ATS score, strengths, weaknesses, missing skills and resume improvement suggestions.">
-
-<meta name="keywords" content="AI Resume Analyzer, ATS Resume Checker, Resume Review, Resume Score, AI Resume Checker">
-
-<meta name="robots" content="index, follow">
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Resume Analyzer</title>
+
+    <title>AI Resume Analyzer | Free ATS Resume Checker</title>
+
+    <meta name="description"
+        content="Analyze your resume using AI. Get ATS score, strengths, weaknesses and suggestions instantly.">
+
+    <meta name="keywords"
+        content="AI Resume Analyzer, ATS Resume Checker, Resume Score">
+
+    <meta name="robots"
+        content="index,follow">
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
     <div class="container">
 
-        <h1>AI Resume Analyzer</h1>
+        <div class="hero">
 
-        <p>Upload your resume (PDF)</p>
+            <h1>🤖 AI Resume Analyzer</h1>
 
-        <input type="file" id="resume" accept=".pdf">
+            <p>
+                Upload your resume and receive instant AI powered
+                resume analysis with ATS score and suggestions.
+            </p>
 
-        <button onclick="analyzeResume()">
-            Analyze Resume
-        </button>
+        </div>
 
-        <h2>Analysis Result</h2>
+        <div class="upload-box">
 
-        <pre id="result">
-Your result will appear here...
-        </pre>
+            <div id="drop-area">
+
+                <div class="upload-icon">
+
+                    ☁️
+
+                </div>
+
+                <h2>Drag & Drop Resume</h2>
+
+                <p>PDF files only</p>
+
+                <input
+                    type="file"
+                    id="resume"
+                    accept=".pdf"
+                    hidden>
+
+                <button
+                    type="button"
+                    id="choose-btn">
+
+                    Choose PDF
+
+                </button>
+
+                <p id="file-name"></p>
+
+            </div>
+
+            <button
+                id="analyze-btn"
+                onclick="analyzeResume()">
+
+                🚀 Analyze Resume
+
+            </button>
+
+        </div>
+
+        <div class="result-card">
+
+            <h2>
+
+                📄 AI Analysis
+
+            </h2>
+
+            <pre id="result">
+
+Your AI analysis will appear here...
+
+            </pre>
+
+        </div>
+
+        <footer>
+
+            Powered by <b>Google Gemini AI</b>
+
+            <br><br>
+
+            Made with ❤️ by Deep Chandravadiya
+
+        </footer>
 
     </div>
 
+    <!-- IMPORTANT -->
     <script src="script.js"></script>
 
 </body>
+
 </html>
-```
